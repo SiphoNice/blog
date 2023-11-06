@@ -1,8 +1,14 @@
-import './App.css';
-
+import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import Home from "./pages/home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <p>This is a react project</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
