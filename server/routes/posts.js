@@ -2,8 +2,9 @@ const express = require('express')
 const router = express.Router()
 const { posts } =require("../models");
 
-router.get('/',(req, res)=>{
-    res.json("Hello world");
+router.get('/', async (req, res)=>{
+   const postLists = await posts.findAll();
+   res.json(postLists);
 });
 
 router.post("/", async (req, res)=>{
