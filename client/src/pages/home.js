@@ -20,9 +20,8 @@ export default function Home() {
                 <span className="meta">
                   Posted by <Link to="/" className="text-danger">{post.username}</Link>
                 </span>
-                <p>
+                <br />
                   <small className="text-danger">{post.createdAt}</small>
-                </p>
               </div>
             </div>
             <div className="col-lg-8 col-md-10 mx-auto">
